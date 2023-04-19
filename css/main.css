@@ -443,7 +443,7 @@ aside .content-wrapper p {
     flex-flow: row wrap;
   }
 
-  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     margin: 0;
     width: 40%;
@@ -481,46 +481,101 @@ aside .content-wrapper p {
   /* -----------About Page Body Styles---------- */
 
   .mission-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 20px;
-    }
- 
-    .mission-content p {
-        width: 45%;
-    }
- 
-    .contact-section .content-wrapper h2 {
-        width: 80%;
-    }
- 
-    .contact-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   /* -----------FAQ Page Body Styles---------- */
 
-    .faq .content-wrapper {
-        justify-content: space-between;
-    }
-    
-    .faq-content {
-        flex-basis: 45%;
-    }
- 
-    .faq h2 {
-        width: 100%;
-    }
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
 
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
 
+  .content-wrapper {
+    width: 960px;
+  }
 
+  /* Main Page and Header/Footer Styles */
+
+  header {
+    padding: 15px 0;
+  }
+
+  .hero-area h1 {
+    width: 70%;
+}
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  /* About Page Styles */
+
+  .mission h2, 
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+
+  /* FAQ Page Styles */
+  .faq h2 {
+    width: 100%;
+  }
+  
 }
 
 
