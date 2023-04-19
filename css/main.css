@@ -87,12 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 
-   /* -------------Header and Footer Styles---------------- */
+/* -------------Header and Footer Styles---------------- */
 
 header,
 footer {
@@ -156,7 +156,7 @@ footer p {
   margin: 0;
 }
 
-footer .contact{
+footer .contact {
   margin-bottom: 50px;
 }
 
@@ -178,7 +178,7 @@ footer .copyright {
 
 /* -----------Main Page Body Styles---------- */
 
-.hero-area{ 
+.hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -209,7 +209,7 @@ aside .content-wrapper p {
   margin-bottom: 60px;
 }
 
-.features .features-items{
+.features .features-items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,35 +281,13 @@ aside .content-wrapper p {
   margin: 50px 0 0 0;
 }
 
-.faq h2{
+.faq h2 {
   margin-bottom: 40px;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -399,16 +377,153 @@ aside .content-wrapper p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles */
+
+  .content-wrapper {
+    width: 640px;
+    margin: 100px 0;
+  }
+
+  /* --------- Header Styles--------- */
+
+  header {
+    padding: 33px 0;
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  /* --------- Footer Styles--------- */
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer h4 {
+    padding: 0 0 40px 0;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* -----------Main Page Body Styles---------- */
+
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form {
+    margin: 0;
+    width: 40%;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 30%;
+  }
+
+  .features-items .fontawesome-icon {
+    padding-bottom: 30px;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* -----------About Page Body Styles---------- */
+
+  .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+ 
+    .mission-content p {
+        width: 45%;
+    }
+ 
+    .contact-section .content-wrapper h2 {
+        width: 80%;
+    }
+ 
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /* -----------FAQ Page Body Styles---------- */
+
+    .faq .content-wrapper {
+        justify-content: space-between;
+    }
+    
+    .faq-content {
+        flex-basis: 45%;
+    }
+ 
+    .faq h2 {
+        width: 100%;
+    }
+
 }
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles */
+
+
+}
+
+
 
 /* ==========================================================================
    Print styles.
