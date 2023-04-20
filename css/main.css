@@ -87,10 +87,61 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.125em;
+}
+
+img {}
+
+figure {}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
+
 
 /* -------------Header and Footer Styles---------------- */
 
@@ -100,6 +151,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  background: #202322;
 }
 
 /* --------- Header Styles--------- */
@@ -120,6 +172,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
@@ -128,6 +181,9 @@ header nav {
   justify-content: space-around;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -137,10 +193,15 @@ header nav ul {
   margin: 0;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 /* --------- Footer Styles--------- */
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -182,6 +243,15 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  height: 500px;
+  background: url(../unplugged-retreat.jpg) no-repeat center;
+}
+
+.hero-area h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
+  line-height: 2.69em;
+  font-weight: 500;
 }
 
 aside {
@@ -189,6 +259,7 @@ aside {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  background: #527158;
 }
 
 aside .content-wrapper h3 {
@@ -199,10 +270,33 @@ aside .content-wrapper p {
   margin-bottom: 30px;
 }
 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../unplugged-retreat-features.jpg) center no-repeat;
 }
 
 .features h2 {
@@ -223,6 +317,7 @@ aside .content-wrapper p {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features-items .fontawesome-icon {
@@ -233,10 +328,12 @@ aside .content-wrapper p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1.875em;
 }
 
 .reviews h3 {
@@ -251,6 +348,7 @@ aside .content-wrapper p {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  background: #527158;
 }
 
 .contact-section {
@@ -258,6 +356,7 @@ aside .content-wrapper p {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
 }
 
 .contact-content p {
@@ -271,6 +370,7 @@ aside .content-wrapper p {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  background: #527158;
 }
 
 .faq .content-wrapper {
@@ -283,10 +383,15 @@ aside .content-wrapper p {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1.875em;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.5em;
 }
 
 /* ==========================================================================
@@ -380,9 +485,22 @@ aside .content-wrapper p {
 @media only screen and (min-width: 768px) {
   /* Tablet Styles */
 
+
+  /* General Styles */
+
   .content-wrapper {
     width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 3em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.875em;
   }
 
   /* --------- Header Styles--------- */
@@ -401,6 +519,10 @@ aside .content-wrapper p {
     display: none;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -415,6 +537,7 @@ aside .content-wrapper p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .content-wrapper {
@@ -424,6 +547,7 @@ aside .content-wrapper p {
 
   footer h4 {
     padding: 0 0 40px 0;
+    font-size: 1.5em;
   }
 
   footer .contact {
@@ -434,7 +558,18 @@ aside .content-wrapper p {
     width: 100%;
   }
 
+  footer p {
+    line-height: 1.125em;
+  }
+
   /* -----------Main Page Body Styles---------- */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 3em;
+    margin: 0;
+  }
+
 
   aside .content-wrapper {
     margin: 50px 0;
@@ -462,7 +597,7 @@ aside .content-wrapper p {
   }
 
   .features .features-item-description {
-    width: 30%;
+    width: 62%;
   }
 
   .features-items .fontawesome-icon {
@@ -476,6 +611,11 @@ aside .content-wrapper p {
 
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* -----------About Page Body Styles---------- */
@@ -493,6 +633,10 @@ aside .content-wrapper p {
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+  }
+
+  .contact-section h4 {
+    font-size: 1.5em;
   }
 
   .contact-content {
@@ -515,13 +659,39 @@ aside .content-wrapper p {
     width: 100%;
   }
 
+  .faq h4 {
+    font-size: 0.875em;
+    line-height: 0.98em;
+  }
+
+  .faq p {
+    font-size: 0.875em;
+    line-height: 0.98em;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
 
+
+  /* General Styles */
   .content-wrapper {
     width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3, 
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.5em;
   }
 
   /* Main Page and Header/Footer Styles */
@@ -532,15 +702,20 @@ aside .content-wrapper p {
 
   .hero-area h1 {
     width: 70%;
-}
+    font-size: 3.75em;
+  }
 
-aside .content-wrapper {
-  justify-content: space-around;
-}
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   .features h2 {
@@ -563,19 +738,39 @@ aside .content-wrapper {
     width: 100%;
   }
 
+  footer h4 {
+    font-size: 1.875em;
+  }
+
   /* About Page Styles */
 
-  .mission h2, 
+  .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
 
   /* FAQ Page Styles */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
-  
+
+  .faq h4 {
+    font-size: 1.125em;
+    line-height: 1.125em;
+  }
+
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1.125em;
+  }
+
 }
 
 
