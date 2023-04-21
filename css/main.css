@@ -661,10 +661,6 @@ input[type=button] {
     width: 48%;
   }
 
-  /* .reviews article div {
-    width: 49%;
-  } */
-
   .reviews h3 {
     width: 75%;
     margin: 0;
@@ -681,6 +677,10 @@ input[type=button] {
 
   .mission-content p {
     width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 50%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -796,6 +796,10 @@ input[type=button] {
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
+  }
+
+  .map figure {
+    padding-bottom: 40%;
   }
 
   .contact-content h4 {
