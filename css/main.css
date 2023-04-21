@@ -172,7 +172,7 @@ header .content-wrapper {
   margin: 0;
 }
 
-header figure{
+header figure {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -334,8 +334,9 @@ input[type=button] {
   text-align: center;
 }
 
-.features-items .fontawesome-icon {
-  padding-bottom: 40px;
+.fontawesome-icon i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .reviews {
@@ -351,7 +352,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.reviews figure{
+.reviews figure {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -559,7 +560,7 @@ input[type=button] {
     /* width: 100%; */
   }
 
-  header figure{
+  header figure {
     width: 30%;
   }
 
@@ -647,8 +648,9 @@ input[type=button] {
     width: 62%;
   }
 
-  .features-items .fontawesome-icon {
+  .fontawesome-icon i {
     padding-bottom: 30px;
+    line-height: 0.5;
   }
 
   .reviews article {
@@ -657,7 +659,7 @@ input[type=button] {
     width: 49%;
   }
 
-  .reviews figure{
+  .reviews figure {
     width: 48%;
   }
 
@@ -732,7 +734,7 @@ input[type=button] {
     font-size: 2.25em;
   }
 
-  h3, 
+  h3,
   h4 {
     font-size: 1.875em;
   }
@@ -774,6 +776,10 @@ input[type=button] {
     flex-basis: 33%;
   }
 
+  .fontawesome-icon i {
+    line-height: 0.5;
+  }
+
   .reviews h2 {
     margin-bottom: 50px;
   }
@@ -813,7 +819,7 @@ input[type=button] {
     font-size: 3em;
   }
 
-  .faq h4, 
+  .faq h4,
   .faq p {
     font-size: 1.125em;
     line-height: 1;
