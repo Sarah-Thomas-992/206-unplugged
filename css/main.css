@@ -203,6 +203,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
@@ -223,6 +224,7 @@ footer .content-wrapper {
 
 footer h4 {
   padding: 20px 0;
+  margin: ;
 }
 
 footer p {
@@ -579,7 +581,7 @@ input[type=button] {
   }
 
   header nav {
-    width: 30%;
+    width: 25%;
   }
 
   header nav ul {
@@ -627,6 +629,10 @@ input[type=button] {
 
   /* -----------Main Page Body Styles---------- */
 
+  .hero-area {
+    height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -663,9 +669,18 @@ input[type=button] {
   }
 
   .fontawesome-icon i {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     line-height: 0.5;
   }
+
+  .fontawesome-icon .bed {
+    margin-top: 20px;
+  }  
+
+  .fontawesome-icon .smile {
+    margin-top: 10px;
+  }
+
 
   .reviews article {
     display: flex;
@@ -691,6 +706,10 @@ input[type=button] {
     padding-top: 20px;
   }
 
+  .mission h2 {
+    margin: 0;
+  }
+
   .mission-content p {
     width: 45%;
   }
@@ -711,6 +730,10 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .contact-section h2 {
+    margin: 0;
   }
 
   /* -----------FAQ Page Body Styles---------- */
@@ -796,7 +819,17 @@ input[type=button] {
 
   .fontawesome-icon i {
     line-height: 0.5;
+    margin-bottom: 40px;
   }
+
+  .fontawesome-icon .bed {
+    margin-top: 0;
+  }
+
+  .fontawesome-icon .smile,
+  .fontawesome-icon .footprints  {
+    margin-top: 18px;
+  }  
 
   .reviews h2 {
     margin-bottom: 50px;
@@ -820,6 +853,10 @@ input[type=button] {
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
+  }
+
+  .mission h2 {
+    margin: 20px 0 10px 0;
   }
 
   .map figure {
