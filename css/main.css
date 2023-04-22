@@ -96,7 +96,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  color: #ecedf4;
   text-align: left;
 }
 
@@ -106,7 +106,7 @@ ol {
 }
 
 a {
-  color: #e2e3ed;
+  color: #ecedf4;
   text-decoration: none;
 }
 
@@ -224,7 +224,6 @@ footer .content-wrapper {
 
 footer h4 {
   padding: 20px 0;
-  margin: ;
 }
 
 footer p {
@@ -307,7 +306,7 @@ input[type=button] {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
-  color: #e2e3ed;
+  color: #ecedf4;
   border: none;
   text-align: center;
   text-transform: uppercase;
@@ -675,7 +674,7 @@ input[type=button] {
 
   .fontawesome-icon .bed {
     margin-top: 20px;
-  }  
+  }
 
   .fontawesome-icon .smile {
     margin-top: 10px;
@@ -827,9 +826,9 @@ input[type=button] {
   }
 
   .fontawesome-icon .smile,
-  .fontawesome-icon .footprints  {
+  .fontawesome-icon .footprints {
     margin-top: 18px;
-  }  
+  }
 
   .reviews h2 {
     margin-bottom: 50px;
